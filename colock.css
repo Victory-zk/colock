@@ -1,0 +1,126 @@
+#colock {
+    width: 300px;
+    height: 300px;
+    border: 12px solid #FF1515;
+    border-radius: 50%;
+    position: relative;
+    margin: 0 auto;
+}
+.colock_main {
+    width: 280px;
+    height: 280px;
+    border: 10px solid #B70D0D;
+    border-radius: 50%;
+    position: absolute;
+}
+
+/* 每一个时刻样式 */
+.scale {
+    width: 30px;
+    height: 30px; 
+    color: #000000;
+    position: absolute;
+    left: 45%;
+    top: 20px;
+    transform-origin: 15px 120px;
+}
+.scale span{
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    line-height: 30px;
+    font-size: 23px;
+}
+/* 每一个刻度值样式 */
+.scKey {
+    width: 5px;
+    height: 5px;
+    background-color: #A3A3A3;
+    position: absolute;
+    left: 49%;
+    top: 15px;
+    transform-origin: 3px 135px;
+    border-radius: 50%;
+}
+
+/* 长刻度值对应时刻样式 */
+.long {
+    width: 5px;
+    height: 15px;
+    border-radius: 0;
+}
+
+/* 中心圆环样式 */
+.circle {
+    width: 20px;
+    height: 20px; 
+    background-color: #E98678;
+    position: absolute;
+    top: 47%;
+    left: 47%;
+    border-radius: 50%;
+    z-index: 5;
+}
+.circle_in {
+    width: 14px;
+    height: 14px; 
+    background-color: #EBB1A9;
+    position: absolute;
+    top: 18%;
+    left: 18%;
+    border-radius: 50%;
+}
+.circle_center {
+    width: 8px;
+    height: 8px; 
+    background-color: #C54B3D;
+    position: absolute;
+    top: 22%;
+    left: 22%;
+    border-radius: 50%;
+}
+
+/* 指针公共样式 */
+.hour, .minute, .second {
+    position: absolute;
+    top: 51%;
+    left: 51%;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+}
+/* 时针样式 */
+.hour {
+    width: 5px;
+    height: 60px; 
+    background-color: #666665;
+    transform-origin: top left;
+    left: 50%;
+}
+/* 分针样式 */
+.minute {
+    width: 5px;
+    height: 85px; 
+    background-color: #666665;
+    transform-origin:  top left;
+}
+/* 秒针样式 */
+.second {
+    width: 3px;
+    height: 88px;
+    background-color: #DD6452;
+    position: relative;
+    transform-origin: top left;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.triangle {
+    position: absolute;
+    top: 100%;
+    left: -4.5px;
+    width: 0; 
+    height: 0;
+    border-width: 6px;
+    border-style: solid;
+    border-color: #DD6452 transparent  transparent transparent;
+}
